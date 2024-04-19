@@ -1,0 +1,40 @@
+//Desafio DIO, prof: Felipe. Classificador de Nível de Herói
+
+let nome = "Alisson_DMC";
+let xp = 8050;
+
+switch (true) {
+  case xp < 1000:
+    console.log("Nível Ferro");
+    break;
+
+  case xp >= 1001 && xp <= 2000:
+    console.log("Nível Bronze");
+    break;
+
+  case xp >= 2001 && xp <= 5000:
+    console.log("Nível Prata");
+    break;
+
+  case xp >= 5001 && xp <= 7000:
+    console.log("Nível Ouro");
+    break;
+
+  case xp >= 7001 && xp <= 8000:
+    console.log("Nível Platina");
+    break;
+
+  case xp >= 8001 && xp <= 9000:
+    console.log("Nível Ascendente " + "SEU PODER É MAIS DE 8 MIL! ");
+    break;
+
+  case xp >= 9001 && xp <= 10000:
+    console.log("Nível Imortal");
+    break;
+
+  default:
+    console.log("Nível Radiante");
+    break;
+}
+
+console.log("O herói " + nome + " está no nível " + xp);
